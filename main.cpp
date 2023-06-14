@@ -15,7 +15,6 @@ float Q_rsort(float number){
     // The address of y is cast to a pointer to an integer, and then dereferenced to obtain the integer value from the address.
     i = 0x5f3759df - ( i >> 1 );//give me the mathmatical meaning of this line
     // 0x5f3759df = 1597463007 = 1011111101110110100111011110111 = 2^31
-    // i >> 1 = i / 2
     // 0x5f3759df - ( i >> 1 ) = 2^31 - i / 2
     y = * ( float * ) &i;
     //cast the address of i to a pointer to a float, and then dereference the pointer to obtain the float value from the address.
